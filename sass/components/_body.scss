@@ -1,0 +1,83 @@
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--title-text-color);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bgrd-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.center {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.unity {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+/* Прибрані крапки у списках */
+.list {
+    list-style: none;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+.hidden {
+    display: none;
+}

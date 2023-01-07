@@ -1,0 +1,124 @@
+.header {
+    display: flex;
+    border-bottom:
+        #ECECEC 1px solid;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    margin-left: 50px;
+}
+
+.logo {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-right: 93px;
+
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.logo>.logo-black {
+    color: var(--title-text-color);
+
+}
+
+.site-nav {
+
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-right: 244px;
+    align-items: center;
+}
+
+.site-nav .item {
+    margin-right: 40px;
+
+}
+
+.site-nav .item:last-child {
+    margin-right: 0;
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.adress-header {
+    margin-left: auto;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+.link {
+    position: relative;
+
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover,
+.link:focus,
+.adress-header:hover,
+.adress-header:focus {
+    color: var(--accent-color);
+
+}
+
+.adress {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.71;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.adress:hover,
+.link:focus {
+    color: var(--accent-color);
+
+}
+
+.adress-list {
+    text-decoration: none;
+}
+
+.list-item {
+    margin-bottom: 9px;
+}
+/* Лінія підкреслення меню */
+.link.current::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+
+    border-radius: 5px;
+    margin-top: 28px;
+
+}

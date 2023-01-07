@@ -1,0 +1,130 @@
+
+/* Портфоліо */
+
+.list-b {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.list-button {
+    margin-right: 8px;
+}
+
+.list-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.list-content>.content-list {
+    padding: 0;
+    list-style: none;
+    flex-basis: calc(100% / 3 - 40px);
+    transition: box-shadow transform 250ms ease cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.content-link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+        }
+}
+
+.content-block {
+    font-style: inherit;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    list-style: none;
+    text-decoration: none;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+}
+
+.portfolio-h2title {
+    font-style: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.portfolio-content {
+    font-size: 16px;
+    line-height: 1.18;
+    font-style: inherit;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.text-portfolio {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+}
+ /* ----------------
+  Блок анімації
+  ---------------- */
+ .box {
+     position: relative;
+     overflow: hidden;
+
+ }
+
+ .content-list:hover,
+ .content-list:focus {
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ .content-list:hover .overlay {
+     transform: translateY(0);
+
+ }
+
+ .overlay {
+     position: absolute;
+     display: flex;
+     align-items: center;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+
+
+     background: rgba(33, 150, 243, 0.9);
+
+     transform: translateY(101%);
+     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .overlay>p {
+     font-family: inherit;
+     font-style: normal;
+     font-size: 18px;
+     line-height: 1.56;
+     letter-spacing: 0.03em;
+     color: #FFFFFF;
+
+     padding-top: 24px;
+     padding-bottom: 24px;
+     padding-left: 24px;
+     padding-right: 24px;
+
+     align-items: center;
+     justify-content: center;
+
+ }
