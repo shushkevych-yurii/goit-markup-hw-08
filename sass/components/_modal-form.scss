@@ -233,9 +233,19 @@
 
  }
  .form-checkbox{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+
+    // -webkit-appearance: none;
+    //     -moz-appearance: none;
+    //     appearance: none;
+    
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border:0;
+    clip:rect(0 0 0 0);
+    overflow: hidden;
     
  }
 
@@ -246,24 +256,24 @@
 
 
  .form-checkbox + .unchecked {
-     opacity: 1;
+    opacity: 1;
  }
 
  .form-checkbox:checked .form-checkbox-icon .unchecked {
-     opacity: 0;
+    opacity: 0;
  }
 
  .form-checkbox:checked .checked {
-     opacity: 0;
+    opacity: 0;
  }
 
  .form-checkbox:checked + .form-checkbox-icon .checked {
-     opacity: 1;
+    opacity: 1;
  }
 
  .form-agreement {
-     display: flex;
-     align-items: center;
+    display: flex;
+    align-items: center;
      
  }
 
