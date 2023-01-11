@@ -105,8 +105,11 @@
 
      color: var(--primary-text-color);
 
-     padding-top: 10px;
-
+     margin-top: 10px;
+    
+     &:hover {
+            fill: var(--accent-color);
+        }
  }
 
  .icon-form {
@@ -128,6 +131,10 @@
      padding-right: 40px;
      padding-top: 4px;
      outline: none;
+
+    &:hover {
+            border-color: var(--accent-color);
+        }
  }
 
  .modal-content {
@@ -141,6 +148,7 @@
      letter-spacing: 0.03em;
 
      color: var(--primary-text-color);
+     
 
  }
 
@@ -156,6 +164,8 @@
      text-decoration-line: underline;
 
      color: var(--accent-color);
+     
+
  }
 
  .submit-form {
@@ -222,6 +232,12 @@
      padding: 12px 16px;
 
  }
+ .form-checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+ }
 
  .form-text {
      padding-top: 10px;
@@ -229,7 +245,7 @@
  }
 
 
- .form-checkbox+.unchecked {
+ .form-checkbox + .unchecked {
      opacity: 1;
  }
 
@@ -241,25 +257,19 @@
      opacity: 0;
  }
 
- .form-checkbox:checked+.form-checkbox-icon .checked {
+ .form-checkbox:checked + .form-checkbox-icon .checked {
      opacity: 1;
  }
 
  .form-agreement {
      display: flex;
      align-items: center;
- }
-
- .label-form:hover {
-
-     fill: var(--accent-color);
- }
-
- .input-form:hover {
-     border-color: var(--accent-color);
+     
  }
 
  .modal-content {
      padding-left: 8px;
-
+     
  }
+
+ 
