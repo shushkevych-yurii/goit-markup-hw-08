@@ -122,3 +122,16 @@
     margin-top: 28px;
 
 }
+.center {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.unity {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
