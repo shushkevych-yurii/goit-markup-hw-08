@@ -437,6 +437,14 @@ a {
   background-size: cover;
 }
 
+.clients-icons {
+  fill: var(--primary-text-color);
+}
+.clients-icons:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 /* Футер */
 .footer {
   background-color: var(--footer-bgrd);
@@ -665,7 +673,7 @@ a {
   right: 8px;
   border-radius: 50%;
   border: 1px solid var(--primary-text-color);
-  padding: 0;
+  padding: 5px;
   cursor: pointer;
   align-items: center;
   -webkit-box-pack: center;
@@ -745,6 +753,7 @@ a {
   padding-right: 40px;
   padding-top: 4px;
   outline: none;
+  margin: 4px;
 }
 .input-form:hover {
   border-color: var(--accent-color);
@@ -772,6 +781,7 @@ a {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent-color);
+  margin: 4px;
 }
 
 .submit-form {

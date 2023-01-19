@@ -114,3 +114,11 @@
     padding-bottom: 94px;
     background-size: cover;
 }
+.clients-icons{
+    fill:var(--primary-text-color);
+    
+    &:hover{
+        fill:var(--accent-color);
+        border-color: var(--accent-color);
+    }
+}
