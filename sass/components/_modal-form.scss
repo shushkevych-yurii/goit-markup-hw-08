@@ -113,7 +113,7 @@
  }
 
  .icon-form {
-     top: 36px;
+     top: 26px;
      left: 12px;
      display: inline-block;
      position: absolute;
@@ -232,43 +232,44 @@
     margin: -1px;
     overflow: hidden;
     
+    
  }
 
  .form-text {
      padding-top: 10px;
      padding-bottom: 4px;
  }
-.form-checkbox::before{
+.form-checkbox-icon::before{
     content: '';
     display:block;
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
     background-image: url(../images/sq-black.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
-.form-checkbox:checked + .form-checkbox::before{
-    background-image: url(../images/icon-checked.svg);
+.form-checkbox:checked + .form-checkbox-icon::before{
+    background-image: url(../images/icon-check.svg);
     background-position: center;
     background-repeat: no-repeat;
-    width: 16px;
-    height: 16px;
+    width: 32px;
+    height: 32px;
 }
 
-//  .form-checkbox + .unchecked {
+//  .form-checkbox-icon  .unchecked {
 //     opacity: 1;
 //  }
 
-//  .form-checkbox:checked .form-checkbox-icon .unchecked {
+//  .form-checkbox:checked +.form-checkbox-icon .unchecked {
 //     opacity: 0;
 //  }
 
-//  .form-checkbox:checked + .checked {
+//  .form-checkbox-icon:checked  .checked {
 //     opacity: 0;
 //  }
 
-//  .form-checkbox:checked .form-checkbox-icon .checked {
+//  .form-checkbox:checked + .form-checkbox-icon .checked {
 //     opacity: 1;
 //  }
 
@@ -278,10 +279,35 @@
      
  }
 
- .modal-content {
-     padding-left: 8px;
+//  .modal-content {
+//      padding-left: 8px;
      
- }
+//  }
+//  .form-checkbox {
+//      display: inline-block;
+//      position: absolute;
+//      left: 12px;
+//      width: 16px;
+//      height: 15px;
+//      border: 1px solid var(--title-text-color);
+//      border-radius: 3px;
+//      transition: all var(--main-transition);
+
+//      @media screen and (max-width: 1199px) {
+//          left: 0;
+//      }
+
+//      @media screen and (max-width: 480px) {
+//          left: 20px;
+//      }
+
+//      .form-agreement-checkbox:checked+& {
+//          background-color: var(--accent-color);
+//          background-image: url(../images/icon-check.svg);
+//          background-origin: border-box;
+//          border-color: var(--accent-color);
+//      }
+//  }
 
 
  
