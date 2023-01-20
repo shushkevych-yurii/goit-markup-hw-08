@@ -20,7 +20,8 @@
       
     
     &:focus,
-    &:active {
+    &:active
+    &:hover {
         background: #188CE8;
         border: 1px solid #000000;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -42,6 +43,14 @@
     color: var(--title-text-color);
     font-family: inherit;
     cursor: pointer;
+    &:focus,
+    &:active 
+    &:hover {
+            background: #188CE8;
+            border: 1px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
 }
 .secondary {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0px 4px 4px rgba(0, 0, 0, 0.25) 250ms cubic-bezier(0.4, 0, 0.2, 1), color var(--bgrd-color) 250ms cubic-bezier(0.4, 0, 0.2, 1);
