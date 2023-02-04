@@ -20,6 +20,24 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         padding-bottom: 30px;
+        @media screen and (max-width: 1199px) {
+                width: 360px;
+                font-size: 26px;
+                line-height: 1.62;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                width: 696px;
+                font-size: 44px;
+                line-height: 1.36;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+            @media screen and (min-width: 320px)and (max-width: 479px) {
+                display: block;
+                width: 290px;
+            }
     }
 }
 

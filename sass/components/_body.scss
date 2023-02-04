@@ -45,6 +45,17 @@ img {
     list-style: none;
     padding-left: 0;
     margin: 0;
+    
+        display: flex;
+    
+        @media screen and (max-width: 1199px) {
+            flex-wrap: wrap;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
+        
 }
 
 body {
@@ -59,11 +70,7 @@ body {
 
 
 
-/* Прибрані крапки у списках */
-.list {
-    list-style: none;
-    display: flex;
-}
+
 a {
     text-decoration: none;
 }
